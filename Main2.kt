@@ -10,11 +10,6 @@ fun main() {
 
 class Matrix(mat: List<List<Int>>) {
     val matrix = mat
-
-    //    operator fun plus(matrix: Matrix) : Matrix{
-//        val m1 = matrix
-//        val m2 =
-//    }
     operator fun plus(m: Matrix): Any {
         var temp: ArrayList<ArrayList<Int>> = ArrayList()
         if (matrix.size == m.matrix.size) {
