@@ -57,27 +57,7 @@ class Matrix(mat: List<List<Int>>) {
         println("Операция вычетания не была выполнена: Матрицы должны быть одинакового размерра")
         return 0
     }
-    operator fun times(m: Matrix): Any {
-        var temp: ArrayList<ArrayList<Int>> = ArrayList()
-        if (matrix.size == m.matrix.size) {
 
-            for (i in 0..matrix.size - 1) {
-                temp.add(ArrayList<Int>())
-
-                if (matrix[i].size == m.matrix[i].size) {
-                    for (j in 0..matrix[i].size - 1) {
-                        temp[i].add(matrix[i][j] * m.matrix[i][j])
-                    }
-                } else {
-                    println("Операция умножения не была выполнена: Матрицы должны быть одинакового размерра")
-                    return 0
-                }
-            }
-            return temp
-        }
-        println("Операция умножения не была выполнена: Матрицы должны быть одинакового размерра")
-        return 0
-    }
 
 
 }
